@@ -1,0 +1,1249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0V2LF9296H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0V2LF9296H');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<title>XY Codes · Free Game Redeem Codes</title>
+<meta name="description" content="XY Codes — free in-game redeem codes for weapon skins, currency, crates and more. New codes added weekly." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ============================================================
+     DESIGN TOKENS — 暗黑电竞风 / Dark Esports
+     ============================================================ */
+  :root {
+    --bg:        #06070f;
+    --bg-2:      #0a0c18;
+    --surface:   #11142a;
+    --surface-2: #161a36;
+    --surface-3: #1d2244;
+
+    --border:        rgba(255,255,255,.08);
+    --border-strong: rgba(255,255,255,.16);
+
+    --text:      #eef0fb;
+    --text-dim:  #9aa1c4;
+    --text-faint:#6b7099;
+
+    --cyan:    #2ff3ff;
+    --violet:  #8b5cf6;
+    --magenta: #ff4d8d;
+    --lime:    #b6ff3c;
+    --amber:   #ffc24b;
+
+    --grad:      linear-gradient(120deg, var(--cyan), var(--violet));
+    --grad-warm: linear-gradient(120deg, var(--magenta), var(--violet));
+    --grad-cool: linear-gradient(120deg, var(--cyan), var(--lime));
+
+    --shadow:      0 24px 60px -24px rgba(0,0,0,.75);
+    --glow-cyan:   0 0 0 1px rgba(47,243,255,.35), 0 8px 40px -8px rgba(47,243,255,.45);
+    --glow-violet: 0 0 0 1px rgba(139,92,246,.35), 0 8px 40px -8px rgba(139,92,246,.45);
+
+    --radius:    20px;
+    --radius-sm: 13px;
+    --radius-xs: 9px;
+    --maxw:      1240px;
+
+    --ease: cubic-bezier(.22, 1, .36, 1);
+    --t-fast: .18s;
+    --t:      .3s;
+
+    --font-display: 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+    --font-body:    'Sora', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', system-ui, sans-serif;
+
+    --space-section: clamp(3.5rem, 8vw, 6.5rem);
+    --soon-label: "SOON";
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+  img, svg { display: block; max-width: 100%; }
+  ul { list-style: none; padding: 0; }
+  :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -2;
+    background:
+      radial-gradient(60vw 60vw at 12% -10%, rgba(139,92,246,.18), transparent 60%),
+      radial-gradient(50vw 50vw at 100% 0%, rgba(47,243,255,.14), transparent 55%),
+      radial-gradient(40vw 40vw at 50% 120%, rgba(255,77,141,.12), transparent 60%),
+      var(--bg);
+  }
+  body::after {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 75%);
+    -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 75%);
+  }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: clamp(1rem, 4vw, 2.25rem); }
+
+  /* ===================== NAV ===================== */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    background: color-mix(in srgb, var(--bg) 72%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav__inner { display: flex; align-items: center; gap: 1.5rem; height: 68px; }
+  .brand { display: flex; align-items: center; gap: .6rem; font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; letter-spacing: .04em; }
+  .brand__mark {
+    width: 34px; height: 34px; border-radius: 10px; background: var(--grad); display: grid; place-items: center;
+    box-shadow: var(--glow-cyan); color: #05060d; flex: none;
+  }
+  .brand__mark svg { width: 20px; height: 20px; }
+  .brand b { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  .nav__links { display: flex; align-items: center; gap: .25rem; margin-left: .5rem; }
+  .nav__link {
+    position: relative; padding: .5rem .85rem; border-radius: 10px;
+    color: var(--text-dim); font-size: .94rem; font-weight: 500; transition: color var(--t-fast), background var(--t-fast);
+  }
+  .nav__link:hover { color: var(--text); background: rgba(255,255,255,.05); }
+  .nav__link.is-active { color: var(--text); }
+  .nav__link.is-active::after { content: ""; position: absolute; left: .85rem; right: .85rem; bottom: 2px; height: 2px; background: var(--grad); border-radius: 2px; }
+  .nav__link.is-soon::before {
+    content: var(--soon-label); font-family: var(--font-body); font-size: .56rem; font-weight: 700;
+    background: var(--surface-3); color: var(--text-faint); padding: 1px 4px; border-radius: 5px; margin-left: 6px; vertical-align: 2px; border: 1px solid var(--border);
+  }
+
+  .nav__right { margin-left: auto; display: flex; align-items: center; gap: .75rem; }
+  .search {
+    display: flex; align-items: center; gap: .5rem; background: var(--surface); border: 1px solid var(--border);
+    padding: .5rem .8rem; border-radius: 11px; min-width: 0; transition: border-color var(--t-fast), box-shadow var(--t-fast);
+  }
+  .search:focus-within { border-color: color-mix(in srgb, var(--cyan) 60%, transparent); box-shadow: 0 0 0 3px rgba(47,243,255,.12); }
+  .search svg { width: 16px; height: 16px; color: var(--text-faint); flex: none; }
+  .search input { background: none; border: none; color: var(--text); font-size: .9rem; width: 9.5rem; outline: none; }
+  .search input::placeholder { color: var(--text-faint); }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+    font-weight: 600; font-size: .92rem; border-radius: 11px; padding: .6rem 1.1rem;
+    transition: transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast); white-space: nowrap;
+  }
+  .btn--primary { background: var(--grad); color: #05060d; box-shadow: var(--glow-cyan); }
+  .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(47,243,255,.5), 0 12px 44px -10px rgba(47,243,255,.6); }
+  .btn--ghost { background: var(--surface); border: 1px solid var(--border-strong); color: var(--text); }
+  .btn--ghost:hover { background: var(--surface-2); transform: translateY(-2px); }
+  .btn--sm { padding: .42rem .8rem; font-size: .84rem; border-radius: 9px; }
+
+  .avatar { width: 36px; height: 36px; border-radius: 50%; flex: none; background: var(--grad-warm); display: grid; place-items: center; font-weight: 700; color: #fff; font-size: .9rem; border: 2px solid var(--border-strong); }
+
+  /* 语言切换 */
+  .lang-toggle {
+    display: inline-flex; align-items: center; gap: .4rem; padding: .5rem .8rem; border-radius: 100px;
+    background: var(--surface); border: 1px solid var(--border-strong); color: var(--text); font-weight: 600; font-size: .82rem;
+    transition: all var(--t-fast);
+  }
+  .lang-toggle:hover { background: var(--surface-2); transform: translateY(-1px); border-color: var(--cyan); }
+  .lang-toggle svg { width: 16px; height: 16px; color: var(--cyan); }
+
+  .nav__burger { display: none; width: 44px; height: 44px; border-radius: 11px; background: var(--surface); border: 1px solid var(--border); place-items: center; }
+  .nav__burger svg { width: 20px; height: 20px; }
+
+  /* ===================== HERO ===================== */
+  .hero { position: relative; padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+  .hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: .5rem; font-family: var(--font-display);
+    font-weight: 600; letter-spacing: .22em; text-transform: uppercase; font-size: .78rem;
+    color: var(--cyan); padding: .35rem .8rem; border: 1px solid var(--border); border-radius: 100px; background: rgba(47,243,255,.06);
+  }
+  .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px var(--cyan); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{ opacity:1 } 50%{ opacity:.35 } }
+
+  .hero h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.6rem, 6.5vw, 4.6rem); line-height: 1.02; letter-spacing: -.01em; margin: 1.2rem 0 1rem; }
+  .hero h1 .glow { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.lead { color: var(--text-dim); font-size: clamp(1rem, 1.6vw, 1.12rem); max-width: 44ch; }
+
+  .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+  .hero__stats { display: flex; gap: 2rem; margin-top: 2.4rem; flex-wrap: wrap; }
+  .stat .n { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text); }
+  .stat .n .g { color: var(--cyan); }
+  .stat .l { font-size: .8rem; color: var(--text-faint); letter-spacing: .03em; }
+
+  .spotlight {
+    position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border-strong);
+    background: var(--surface); box-shadow: var(--shadow); aspect-ratio: 4/5; max-height: 520px;
+    transform: perspective(1200px) rotateY(-6deg) rotateX(2deg); transition: transform var(--t) var(--ease);
+  }
+  .spotlight:hover { transform: perspective(1200px) rotateY(-2deg) rotateX(1deg) translateY(-4px); }
+  .spotlight__art {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 20% 0%, rgba(255,77,141,.55), transparent 55%),
+      radial-gradient(120% 90% at 100% 100%, rgba(47,243,255,.55), transparent 55%),
+      linear-gradient(160deg, #2a1066, #07132e 70%);
+  }
+  .spotlight__art::after {
+    content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 28px 28px; mask-image: radial-gradient(circle at 50% 40%, #000, transparent 80%); -webkit-mask-image: radial-gradient(circle at 50% 40%, #000, transparent 80%);
+  }
+  .spotlight__glyph { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; font-size: clamp(5rem, 14vw, 9rem); color: rgba(255,255,255,.12); letter-spacing: -.04em; user-select: none; }
+  .spotlight__badge {
+    position: absolute; top: 1rem; left: 1rem; z-index: 2; background: rgba(5,6,13,.6); backdrop-filter: blur(8px);
+    border: 1px solid var(--border-strong); padding: .3rem .7rem; border-radius: 100px; font-size: .74rem; font-weight: 600; color: var(--amber); display: flex; align-items: center; gap: .4rem;
+  }
+  .spotlight__body { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 1.4rem; background: linear-gradient(transparent, rgba(5,6,13,.92) 45%); }
+  .spotlight__body .tag { font-size: .72rem; color: var(--cyan); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .spotlight__body h3 { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; margin: .25rem 0 .4rem; }
+  .spotlight__body p { color: var(--text-dim); font-size: .88rem; }
+  .spotlight__meta { display: flex; gap: 1.1rem; margin-top: .9rem; font-size: .8rem; color: var(--text-faint); }
+  .spotlight__meta b { color: var(--text); font-family: var(--font-display); }
+
+  /* ===================== SECTION ===================== */
+  .section { padding-block: var(--space-section); }
+  .section__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .section__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 3.6vw, 2.4rem); letter-spacing: -.01em; }
+  .section__title .bar { display: inline-block; width: 8px; height: 1.1em; background: var(--grad); border-radius: 3px; margin-right: .6rem; vertical-align: -.12em; }
+  .section__sub { color: var(--text-dim); font-size: .95rem; margin-top: .35rem; max-width: 52ch; }
+  .link-more { color: var(--cyan); font-weight: 600; font-size: .9rem; display: inline-flex; align-items: center; gap: .35rem; transition: gap var(--t-fast); }
+  .link-more:hover { gap: .6rem; }
+
+  /* ===================== CATEGORY FILTER ===================== */
+  .filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
+  .chip {
+    display: inline-flex; align-items: center; gap: .5rem; padding: .55rem 1rem; border-radius: 100px;
+    font-size: .9rem; font-weight: 500; background: var(--surface); border: 1px solid var(--border); color: var(--text-dim); transition: all var(--t-fast);
+  }
+  .chip svg { width: 16px; height: 16px; }
+  .chip:hover { color: var(--text); border-color: var(--border-strong); transform: translateY(-1px); }
+  .chip.is-active { color: #05060d; background: var(--grad); border-color: transparent; box-shadow: var(--glow-cyan); font-weight: 600; }
+  .chip .count { font-size: .72rem; opacity: .7; }
+
+  /* ===================== GAME GRID ===================== */
+  .games { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .game {
+    position: relative; border-radius: var(--radius-sm); overflow: hidden; background: var(--surface); border: 1px solid var(--border);
+    transition: transform var(--t) var(--ease), border-color var(--t-fast), box-shadow var(--t); display: flex; flex-direction: column;
+  }
+  .game:hover { transform: translateY(-6px); border-color: var(--border-strong); box-shadow: var(--shadow); }
+  .game__cover { aspect-ratio: 16/10; position: relative; overflow: hidden; display: grid; place-items: center; }
+  .game__cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(5,6,13,.85)); }
+  .game__cover .glyph { font-family: var(--font-display); font-weight: 700; font-size: 3.4rem; color: rgba(255,255,255,.22); position: relative; z-index: 1; transition: transform var(--t) var(--ease); text-shadow: 0 4px 30px rgba(0,0,0,.4); }
+  .game:hover .game__cover .glyph { transform: scale(1.08) rotate(-2deg); }
+  .game__genre {
+    position: absolute; top: .7rem; left: .7rem; z-index: 2; font-size: .68rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+    padding: .25rem .55rem; border-radius: 7px; background: rgba(5,6,13,.55); backdrop-filter: blur(6px); border: 1px solid var(--border); color: var(--text);
+  }
+  .game__rating {
+    position: absolute; top: .7rem; right: .7rem; z-index: 2; font-size: .72rem; font-weight: 700; font-family: var(--font-display);
+    padding: .25rem .5rem; border-radius: 7px; background: rgba(5,6,13,.55); backdrop-filter: blur(6px); border: 1px solid var(--border); color: var(--amber); display: flex; align-items: center; gap: .25rem;
+  }
+  .game__body { padding: .95rem 1rem 1.1rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .game__title { font-family: var(--font-display); font-weight: 700; font-size: 1.18rem; letter-spacing: .01em; }
+  .game__desc { color: var(--text-dim); font-size: .84rem; line-height: 1.45; flex: 1; }
+  .game__tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .game__tags span { font-size: .7rem; color: var(--text-faint); background: var(--surface-2); border: 1px solid var(--border); padding: .15rem .5rem; border-radius: 6px; }
+  .game__foot { display: flex; align-items: center; justify-content: space-between; margin-top: .3rem; }
+  .game__players { font-size: .76rem; color: var(--text-faint); display: flex; align-items: center; gap: .35rem; }
+  .game__players .live { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 8px var(--lime); }
+  .play { display: inline-flex; align-items: center; gap: .4rem; font-size: .82rem; font-weight: 600; padding: .4rem .8rem; border-radius: 9px; background: var(--surface-2); border: 1px solid var(--border-strong); color: var(--text); transition: all var(--t-fast); }
+  .play:hover { background: var(--grad); color: #05060d; border-color: transparent; box-shadow: var(--glow-cyan); }
+  .play svg { width: 14px; height: 14px; }
+
+  .c-rpg      { background: linear-gradient(150deg, #5b2bd6, #1b0e4d); }
+  .c-action   { background: linear-gradient(150deg, #ff3d6e, #5b1133); }
+  .c-fps      { background: linear-gradient(150deg, #14b8c4, #06313f); }
+  .c-strategy { background: linear-gradient(150deg, #f59e0b, #5a3500); }
+  .c-casual   { background: linear-gradient(150deg, #2bd66f, #0b4d2e); }
+  .c-racing   { background: linear-gradient(150deg, #3b82f6, #0a2350); }
+  .c-sim      { background: linear-gradient(150deg, #ec4899, #4a1039); }
+  .c-card     { background: linear-gradient(150deg, #8b5cf6, #2a1066); }
+
+  /* ===================== RESERVED ENTRIES ===================== */
+  .entries { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .entry {
+    position: relative; border-radius: var(--radius); overflow: hidden; border: 1px dashed var(--border-strong); background: var(--surface);
+    padding: 1.6rem; min-height: 200px; display: flex; flex-direction: column; gap: .8rem; transition: border-color var(--t-fast), background var(--t-fast), transform var(--t) var(--ease);
+  }
+  .entry:hover { border-color: color-mix(in srgb, var(--cyan) 50%, transparent); background: var(--surface-2); transform: translateY(-4px); }
+  .entry__icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; background: var(--surface-3); border: 1px solid var(--border); color: var(--cyan); }
+  .entry__icon svg { width: 26px; height: 26px; }
+  .entry h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; }
+  .entry p { color: var(--text-dim); font-size: .88rem; flex: 1; }
+  .entry__soon { align-self: flex-start; font-size: .72rem; font-weight: 600; letter-spacing: .05em; color: var(--amber); background: rgba(255,194,75,.1); border: 1px solid rgba(255,194,75,.25); padding: .25rem .6rem; border-radius: 100px; display: flex; align-items: center; gap: .35rem; }
+  .entry__arrow { position: absolute; top: 1.4rem; right: 1.4rem; color: var(--text-faint); transition: transform var(--t-fast), color var(--t-fast); }
+  .entry:hover .entry__arrow { transform: translate(3px,-3px); color: var(--cyan); }
+
+  /* ===================== CTA ===================== */
+  .cta {
+    position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border-strong); padding: clamp(2rem, 5vw, 3.5rem);
+    background: radial-gradient(80% 120% at 0% 0%, rgba(139,92,246,.3), transparent 60%), radial-gradient(80% 120% at 100% 100%, rgba(47,243,255,.25), transparent 60%), var(--surface);
+    display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; align-items: center;
+  }
+  .cta h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.05; }
+  .cta p { color: var(--text-dim); margin-top: .8rem; max-width: 46ch; }
+  .subscribe { display: flex; gap: .6rem; flex-wrap: wrap; }
+  .subscribe input { flex: 1; min-width: 0; background: var(--bg-2); border: 1px solid var(--border-strong); border-radius: 11px; padding: .7rem 1rem; color: var(--text); font-size: .92rem; outline: none; transition: border-color var(--t-fast); }
+  .subscribe input:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(47,243,255,.12); }
+
+  /* ===================== FOOTER ===================== */
+  .footer { border-top: 1px solid var(--border); padding-block: 3rem 2rem; margin-top: 2rem; }
+  .footer__grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 2rem; }
+  .footer h4 { font-family: var(--font-display); font-size: 1rem; letter-spacing: .04em; margin-bottom: .9rem; color: var(--text); }
+  .footer a { display: block; color: var(--text-dim); font-size: .88rem; padding: .25rem 0; transition: color var(--t-fast); }
+  .footer a:hover { color: var(--cyan); }
+  .footer__about p { color: var(--text-dim); font-size: .88rem; max-width: 34ch; margin-top: .8rem; }
+  .footer__bottom { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--text-faint); font-size: .82rem; }
+
+  /* ===================== REVEAL ===================== */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.is-in { opacity: 1; transform: none; }
+
+  /* ===================== RESPONSIVE ===================== */
+  /* ===================== MOBILE MENU ===================== */
+  .mobile-menu { position: fixed; inset: 0; z-index: 80; display: none; }
+  .mobile-menu.is-open { display: block; }
+  .mobile-menu__backdrop { position: absolute; inset: 0; background: rgba(3,4,10,.62); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); opacity: 0; transition: opacity var(--t) var(--ease); }
+  .mobile-menu.is-open .mobile-menu__backdrop { opacity: 1; }
+  .mobile-menu__panel {
+    position: absolute; top: 0; right: 0; bottom: 0; width: min(82vw, 320px);
+    background: var(--surface); border-left: 1px solid var(--border-strong);
+    box-shadow: var(--shadow); padding: 5rem 1.4rem 2rem; overflow-y: auto;
+    display: flex; flex-direction: column; gap: .35rem;
+    transform: translateX(100%); transition: transform var(--t) var(--ease);
+  }
+  .mobile-menu.is-open .mobile-menu__panel { transform: none; }
+  .mobile-menu__head { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--text-faint); padding: 0 1rem .5rem; margin-top: 1rem; }
+  .mobile-menu__head:first-child { margin-top: 0; }
+  .mobile-menu__link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .95rem 1rem; border-radius: 12px; color: var(--text-dim);
+    font-family: var(--font-display); font-weight: 600; font-size: 1.06rem; letter-spacing: .02em;
+    transition: all var(--t-fast);
+  }
+  .mobile-menu__link:hover, .mobile-menu__link:active { background: var(--surface-2); color: var(--text); }
+  .mobile-menu__link.is-active { color: var(--cyan); background: rgba(47,243,255,.08); }
+  .mobile-menu__link .soon-tag { font-family: var(--font-body); font-size: .56rem; font-weight: 700; background: var(--surface-3); color: var(--text-faint); padding: 2px 6px; border-radius: 5px; border: 1px solid var(--border); }
+
+  @media (max-width: 980px) {
+    .hero__grid { grid-template-columns: 1fr; }
+    .spotlight { max-height: 440px; transform: none; aspect-ratio: 16/10; }
+    .spotlight:hover { transform: translateY(-4px); }
+    .cta { grid-template-columns: 1fr; }
+    .footer__grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 760px) {
+    .nav__links { display: none; }
+    .search { display: none; }
+    .nav__right .btn--primary { display: none; }   /* hide Sign in on mobile */
+    .nav__right .avatar { display: none; }
+    .nav__burger { display: grid; }
+    .nav__inner { gap: .7rem; }
+    .footer__grid { grid-template-columns: 1fr; }
+    .section { padding-block: clamp(2.6rem, 9vw, 4rem); }
+  }
+  @media (max-width: 560px) {
+    .games { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+    .game__body { padding: .8rem .85rem 1rem; }
+    .game__title { font-size: 1.02rem; }
+    .game__cover .glyph { font-size: 2.6rem; }
+    .hero h1 { font-size: clamp(2.1rem, 9vw, 3rem); }
+    .hero__cta { flex-direction: column; align-items: stretch; }
+    .hero__cta .btn { width: 100%; }
+    .section__head { gap: .6rem; }
+  }
+  @media (max-width: 480px) {
+    .hero__stats { gap: 1.3rem; }
+    .hero__stats .stat .n { font-size: 1.35rem; }
+    .entries { grid-template-columns: 1fr; }
+    .cta { padding: 1.5rem; }
+    .subscribe { flex-direction: column; }
+    .subscribe .btn { width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+
+  /* ===================== CODE CARDS ===================== */
+  .codes-tools{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;margin-bottom:1.4rem;}
+  .codes-search{flex:1;min-width:220px;}
+  .code-grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
+  .code-card{display:flex;flex-direction:column;gap:.7rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.2rem 1.25rem;position:relative;transition:transform var(--t-fast),border-color var(--t-fast),box-shadow var(--t-fast);}
+  .code-card:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:var(--shadow);}
+  .code-card.is-expired{opacity:.55;}
+  .code-card__head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;}
+  .code-card__game{font-family:var(--font-display);font-weight:700;font-size:1.05rem;}
+  .code-card__status{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--lime);background:rgba(182,255,60,.12);border:1px solid rgba(182,255,60,.3);padding:.2rem .55rem;border-radius:999px;}
+  .code-card.is-expired .code-card__status{color:var(--text-faint);background:var(--surface-2);border-color:var(--border);}
+  .code-card__value{font-family:var(--font-body);font-weight:600;letter-spacing:.06em;font-size:1.02rem;color:var(--cyan);background:var(--bg);border:1px dashed var(--border-strong);border-radius:10px;padding:.7rem .9rem;word-break:break-all;}
+  .code-card__copy{align-self:flex-start;cursor:pointer;font-family:var(--font-display);font-weight:700;letter-spacing:.04em;color:var(--violet);background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.3);border-radius:999px;padding:.45rem 1.1rem;transition:all var(--t-fast);}
+  .code-card__copy:hover{background:rgba(139,92,246,.2);}
+  .code-card__copy.copied{color:var(--lime);border-color:rgba(182,255,60,.4);background:rgba(182,255,60,.12);}
+  .code-card__reward{color:var(--text-dim);font-size:.9rem;}
+  .code-card__foot{font-size:.8rem;color:var(--text-faint);}
+  @media (max-width:560px){.code-grid{grid-template-columns:1fr;}.codes-tools{flex-direction:column;align-items:stretch;}}
+
+  /* ===================== HOW TO REDEEM ===================== */
+  .howto{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.1rem 1.3rem;margin-bottom:1.6rem;}
+  .howto__title{font-family:var(--font-display);font-weight:700;font-size:.95rem;letter-spacing:.03em;color:var(--cyan);display:flex;align-items:center;gap:.5rem;flex:none;}
+  .howto__title svg{width:18px;height:18px;}
+  .howto__steps{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;flex:1;}
+  .howto__step{display:flex;align-items:center;gap:.45rem;font-size:.86rem;color:var(--text-dim);}
+  .howto__step b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--surface-3);border:1px solid var(--border-strong);font-family:var(--font-display);font-size:.72rem;font-weight:700;color:var(--cyan);flex:none;}
+  .howto__arrow{color:var(--text-faint);font-size:.8rem;}
+  @media(max-width:560px){.howto{flex-direction:column;align-items:flex-start;}.howto__steps{flex-direction:column;align-items:flex-start;gap:.5rem;}.howto__arrow{display:none;}}
+
+    /* ===================== 玩家登录 / Player Auth ===================== */
+  .btn--block { width: 100%; }
+
+  .account { position: relative; display: flex; align-items: center; }
+  .account .avatar { cursor: pointer; }
+  .btn[hidden], .avatar[hidden] { display: none; }
+  .account__menu {
+    position: absolute; top: calc(100% + .7rem); right: 0; min-width: 215px; z-index: 60;
+    background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
+    box-shadow: var(--shadow); padding: .55rem; opacity: 0; transform: translateY(-6px) scale(.98);
+    transform-origin: top right; pointer-events: none; transition: opacity var(--t-fast), transform var(--t-fast);
+  }
+  .account__menu.is-open { opacity: 1; transform: none; pointer-events: auto; }
+  .account__name { padding: .45rem .6rem .1rem; font-family: var(--font-display); font-weight: 700; font-size: 1rem; }
+  .account__email { padding: 0 .6rem .55rem; font-size: .76rem; color: var(--text-faint); word-break: break-all; }
+  .account__divider { height: 1px; background: var(--border); margin: .45rem 0; }
+  .account__item {
+    display: flex; align-items: center; gap: .55rem; width: 100%; text-align: left;
+    padding: .55rem .6rem; border-radius: 9px; color: var(--text-dim); font-size: .86rem; font-weight: 500;
+    transition: background var(--t-fast), color var(--t-fast);
+  }
+  .account__item:hover { background: var(--surface-2); color: var(--text); }
+  .account__item--danger { color: var(--magenta); }
+  .account__item--danger:hover { background: rgba(255,77,141,.12); color: var(--magenta); }
+  .account__item svg { width: 16px; height: 16px; flex: none; }
+
+  .modal { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 1.25rem; }
+  .modal.is-open { display: flex; }
+  .modal__backdrop { position: absolute; inset: 0; background: rgba(3,4,10,.72); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .modal__card {
+    position: relative; width: min(420px, 100%); background: var(--surface); border: 1px solid var(--border-strong);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.7rem 1.7rem 1.4rem; overflow: hidden;
+    animation: modalIn .35s var(--ease) both;
+  }
+  @keyframes modalIn { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+  .modal__card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
+  .modal__close { position: absolute; top: .9rem; right: .9rem; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: var(--text-faint); background: var(--surface-2); border: 1px solid var(--border); transition: all var(--t-fast); }
+  .modal__close:hover { color: var(--text); border-color: var(--border-strong); transform: rotate(90deg); }
+  .modal__close svg { width: 18px; height: 18px; }
+
+  .auth-tabs { display: flex; gap: .4rem; background: var(--surface-2); padding: .3rem; border-radius: 12px; margin-bottom: 1.25rem; }
+  .auth-tab { flex: 1; padding: .6rem; border-radius: 9px; font-weight: 600; font-size: .9rem; color: var(--text-dim); transition: all var(--t-fast); }
+  .auth-tab.is-active { background: var(--surface-3); color: var(--text); box-shadow: var(--shadow); }
+
+  .auth-form { display: flex; flex-direction: column; gap: .85rem; }
+  .field { display: flex; flex-direction: column; }
+  .field label { font-size: .76rem; font-weight: 600; color: var(--text-dim); margin-bottom: .4rem; letter-spacing: .02em; }
+  .field input {
+    width: 100%; padding: .7rem .85rem; border-radius: 11px; background: var(--bg-2); border: 1px solid var(--border);
+    color: var(--text); font-size: .92rem; font-family: inherit; outline: none; transition: border-color var(--t-fast), box-shadow var(--t-fast);
+  }
+  .field input::placeholder { color: var(--text-faint); }
+  .field input:focus { border-color: color-mix(in srgb, var(--cyan) 60%, transparent); box-shadow: 0 0 0 3px rgba(47,243,255,.12); }
+  .field.is-invalid input { border-color: var(--magenta); box-shadow: 0 0 0 3px rgba(255,77,141,.12); }
+  .field .err { display: none; font-size: .72rem; color: var(--magenta); margin-top: .35rem; }
+  .field.is-invalid .err { display: block; }
+
+  .auth-switch { text-align: center; font-size: .82rem; color: var(--text-faint); margin-top: .2rem; }
+  .auth-switch a { color: var(--cyan); font-weight: 600; }
+  .auth-switch a:hover { text-decoration: underline; }
+  .auth-demo { text-align: center; font-size: .72rem; color: var(--text-faint); margin-top: 1rem; opacity: .85; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 1.6rem; transform: translateX(-50%) translateY(20px); z-index: 300;
+    background: var(--surface); border: 1px solid var(--border-strong); border-radius: 12px; padding: .75rem 1.15rem;
+    box-shadow: var(--shadow); font-size: .88rem; color: var(--text); opacity: 0; transition: opacity var(--t), transform var(--t); pointer-events: none; max-width: 90vw;
+  }
+  .toast.is-show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .mm-account { padding: 0 1.1rem .5rem; }
+  .mm-account .btn { width: 100%; }
+  .mm-account__name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; padding: .2rem 0; }
+  .mm-account__out { width: 100%; text-align: left; margin-top: .55rem; padding: .6rem .8rem; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); color: var(--magenta); font-weight: 600; font-size: .88rem; }
+  .mm-account__out:hover { background: rgba(255,77,141,.12); }
+
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" data-i18n-attr="aria-label:nav.home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"/><circle cx="12" cy="12" r="9"/></svg>
+        </span>
+        <span>XY<b data-i18n="nav.brandSuffix">Codes</b></span>
+      </a>
+
+            <nav class="nav__links" aria-label="Main">
+        <a class="nav__link" href="index.html" data-i18n="nav.games">Games</a>
+        <a class="nav__link" href="news.html" data-i18n="nav.news">News</a>
+        <a class="nav__link is-active" href="codes.html" data-i18n="nav.codes">Codes</a>
+        <a class="nav__link" href="tools.html" data-i18n="nav.tools">Tools</a>
+        <a class="nav__link is-soon" href="index.html#entries" data-i18n="nav.community">Community</a>
+        <a class="nav__link is-soon" href="index.html#entries" data-i18n="nav.live">Live</a>
+        <a class="nav__link is-soon" href="index.html#entries" data-i18n="nav.store">Store</a>
+        <a class="nav__link is-soon" href="index.html#entries" data-i18n="nav.esports">Esports</a>
+      </nav>
+
+      <div class="nav__right">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" data-i18n-attr="placeholder:nav.search" placeholder="Search games, categories…" />
+        </label>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <span data-i18n="lang.btn">中文</span>
+        </button>
+        <div class="account" id="account">
+          <button class="btn btn--primary btn--sm" id="openAuth" data-i18n="nav.signin">Sign in</button>
+          <button class="avatar" id="accountBtn" aria-haspopup="menu" aria-expanded="false" hidden>X</button>
+          <div class="account__menu" id="accountMenu" role="menu" aria-hidden="true">
+            <div class="account__name" id="accName">—</div>
+            <div class="account__email" id="accEmail"></div>
+            <div class="account__divider"></div>
+            <button class="account__item" type="button" data-soon="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13M4 19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M4 19a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2"/><path d="M10 9h4"/></svg>
+              <span data-i18n="auth.myLibrary">My Library</span>
+            </button>
+            <button class="account__item" type="button" data-soon="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+              <span data-i18n="auth.settings">Settings</span>
+            </button>
+            <div class="account__divider"></div>
+            <button class="account__item account__item--danger" type="button" id="logoutBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+              <span data-i18n="auth.signout">Sign out</span>
+            </button>
+          </div>
+        </div>
+        <button class="nav__burger" data-i18n-attr="aria-label:nav.menu" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__backdrop" data-close></div>
+        <nav class="mobile-menu__panel" aria-label="Mobile">
+      <div class="mobile-menu__head" data-i18n="mm.head">Browse</div>
+<div class="mm-account" id="mmAccountOut">
+        <button class="btn btn--primary btn--sm" id="openAuthMobile" data-i18n="nav.signin">Sign in</button>
+      </div>
+      <div class="mm-account" id="mmAccountIn" hidden>
+        <div class="mm-account__name" id="mmName">—</div>
+        <button class="mm-account__out" id="logoutBtnMobile" type="button" data-i18n="auth.signout">Sign out</button>
+      </div>
+      <a class="mobile-menu__link" href="index.html" data-i18n="nav.games">Games</a>
+      <a class="mobile-menu__link" href="news.html" data-i18n="nav.news">News</a>
+      <a class="mobile-menu__link is-active" href="codes.html" data-i18n="nav.codes">Codes</a>
+      <a class="mobile-menu__link" href="tools.html" data-i18n="nav.tools">Tools</a>
+      <a class="mobile-menu__link" href="index.html#entries" data-i18n="nav.community">Community <span class="soon-tag">SOON</span></a>
+      <a class="mobile-menu__link" href="index.html#entries" data-i18n="nav.live">Live <span class="soon-tag">SOON</span></a>
+      <a class="mobile-menu__link" href="index.html#entries" data-i18n="nav.store">Store <span class="soon-tag">SOON</span></a>
+      <a class="mobile-menu__link" href="index.html#entries" data-i18n="nav.esports">Esports <span class="soon-tag">SOON</span></a>
+    </nav>
+  </div>
+
+  <!-- ===================== 玩家登录弹窗 / Auth Modal ===================== -->
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-auth></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal__close" id="authClose" type="button" data-i18n-attr="aria-label:auth.close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <h2 id="authTitle" class="sr-only" data-i18n="auth.signin" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Sign in</h2>
+
+      <div class="auth-tabs" role="tablist">
+        <button class="auth-tab is-active" id="tabLogin" type="button" role="tab" aria-selected="true" data-i18n="auth.signin">Sign in</button>
+        <button class="auth-tab" id="tabSignup" type="button" role="tab" aria-selected="false" data-i18n="auth.signup">Create account</button>
+      </div>
+
+      <!-- Login -->
+      <form class="auth-form" id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginId" data-i18n="auth.username">Username</label>
+          <input id="loginId" name="identifier" type="text" autocomplete="username" data-i18n-attr="placeholder:auth.username" placeholder="Username" />
+          <div class="err" data-err="loginId"></div>
+        </div>
+        <div class="field">
+          <label for="loginPw" data-i18n="auth.password">Password</label>
+          <input id="loginPw" name="password" type="password" autocomplete="current-password" data-i18n-attr="placeholder:auth.password" placeholder="Password" />
+          <div class="err" data-err="loginPw"></div>
+        </div>
+        <button class="btn btn--primary btn--block" type="submit" data-i18n="auth.submitLogin">Sign in</button>
+        <p class="auth-switch" data-i18n="auth.noAccount">New to XY? <a href="#" id="toSignup">Create one</a></p>
+      </form>
+
+      <!-- Sign up -->
+      <form class="auth-form" id="signupForm" hidden novalidate>
+        <div class="field">
+          <label for="suUser" data-i18n="auth.username">Username</label>
+          <input id="suUser" name="username" type="text" autocomplete="username" data-i18n-attr="placeholder:auth.username" placeholder="Username" />
+          <div class="err" data-err="suUser"></div>
+        </div>
+        <div class="field">
+          <label for="suEmail" data-i18n="auth.email">Email</label>
+          <input id="suEmail" name="email" type="email" autocomplete="email" data-i18n-attr="placeholder:auth.email" placeholder="Email" />
+          <div class="err" data-err="suEmail"></div>
+        </div>
+        <div class="field">
+          <label for="suPw" data-i18n="auth.password">Password</label>
+          <input id="suPw" name="password" type="password" autocomplete="new-password" data-i18n-attr="placeholder:auth.password" placeholder="Password" />
+          <div class="err" data-err="suPw"></div>
+        </div>
+        <div class="field">
+          <label for="suPw2" data-i18n="auth.confirm">Confirm password</label>
+          <input id="suPw2" name="confirm" type="password" autocomplete="new-password" data-i18n-attr="placeholder:auth.confirm" placeholder="Confirm password" />
+          <div class="err" data-err="suPw2"></div>
+        </div>
+        <button class="btn btn--primary btn--block" type="submit" data-i18n="auth.submitSignup">Create account</button>
+        <p class="auth-switch" data-i18n="auth.hasAccount">Already have an account? <a href="#" id="toLogin">Sign in</a></p>
+      </form>
+
+      <p class="auth-demo" data-i18n="auth.demoNote">Demo mode — accounts are saved locally in your browser.</p>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+        <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="reveal">
+          <span class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">REWARDS · Free Redeem Codes</span></span>
+          <h1><span data-i18n="hero.title1">Game</span><br><span class="glow" data-i18n="hero.title2">redeem codes</span></h1>
+          <p class="lead" data-i18n="hero.lead">Grab free in-game rewards — gems, skins, currency and more. New codes added weekly. Copy a code and redeem before it expires.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#codes"><span data-i18n="hero.browse">Browse Codes</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="news.html" data-i18n="hero.news">Read News</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <article class="spotlight" aria-label="Featured code pack">
+            <div class="spotlight__art"></div>
+            <div class="spotlight__glyph" aria-hidden="true" style="font-size:2.4rem;letter-spacing:.05em;">★</div>
+            <span class="spotlight__badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#ffc24b"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.6 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>
+              <span data-i18n="spot.badge">Hot</span>
+            </span>
+            <div class="spotlight__body">
+              <span class="tag" data-i18n="spot.tag">Featured Pack</span>
+              <h3 data-i18n="spot.title">Summer G-Coin Pack</h3>
+              <p data-i18n="spot.desc">500 G-Coin, an exclusive parachute skin and a 7-day XP boost — one code, all rewards.</p>
+              <div class="spotlight__meta">
+                <span><span data-i18n="spot.game">Game</span> <b data-i18n="spot.gamev">PUBG</b></span>
+                <span><span data-i18n="spot.reward">Reward</span> <b data-i18n="spot.rewardv">Mega</b></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GAMES ===================== -->
+        <section class="section" id="codes">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <h2 class="section__title"><span class="bar"></span><span data-i18n="codes.title">Redeem Codes</span></h2>
+            <p class="section__sub" data-i18n="codes.sub">Filter by game or search a title. Copy a code and redeem it in-game before it expires.</p>
+          </div>
+        </div>
+
+        <div class="codes-tools reveal">
+          <label class="search codes-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="codeSearch" data-i18n-attr="placeholder:codes.search" placeholder="Search game or code…" />
+          </label>
+          <div class="filters" role="tablist" aria-label="Game filter">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true"><span data-i18n="filter.all">All</span></button>
+            <button class="chip" data-filter="cs2" role="tab" aria-selected="false"><span data-i18n="ccat.cs2">CS2</span></button>
+            <button class="chip" data-filter="pubg" role="tab" aria-selected="false"><span data-i18n="ccat.pubg">PUBG</span></button>
+            <button class="chip" data-filter="poe" role="tab" aria-selected="false"><span data-i18n="ccat.poe">PoE</span></button>
+            <button class="chip" data-filter="dota" role="tab" aria-selected="false"><span data-i18n="ccat.dota">Dota 2</span></button>
+          </div>
+        </div>
+
+        <div class="howto reveal">
+          <span class="howto__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <span data-i18n="howto.title">How to Redeem</span>
+          </span>
+          <div class="howto__steps">
+            <span class="howto__step"><b>1</b><span data-i18n="howto.s1">Copy a code below</span></span>
+            <span class="howto__arrow">→</span>
+            <span class="howto__step"><b>2</b><span data-i18n="howto.s2">Open the game</span></span>
+            <span class="howto__arrow">→</span>
+            <span class="howto__step"><b>3</b><span data-i18n="howto.s3">Find "Redeem Code" in settings</span></span>
+            <span class="howto__arrow">→</span>
+            <span class="howto__step"><b>4</b><span data-i18n="howto.s4">Paste &amp; claim rewards</span></span>
+          </div>
+        </div>
+
+        <div class="code-grid reveal" id="codeGrid">
+          <article class="code-card" data-cat="cs2">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.1.game">Counter-Strike 2</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="CS2SUMMER26">CS2SUMMER26</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.1.reward">Exclusive weapon skin + 2 weapon cases</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.1.expire">Aug 31, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="cs2">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.2.game">Counter-Strike 2</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="CS2WELCOME">CS2WELCOME</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.2.reward">New-player knife + sticker capsule</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.2.expire">Sep 30, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="pubg">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.3.game">PUBG: BATTLEGROUNDS</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="PUBGGCOIN500">PUBGGCOIN500</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.3.reward">500 G-Coin + Survivor Crate</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.3.expire">Aug 15, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="poe">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.4.game">Path of Exile</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="POEEXILEPACK">POEEXILEPACK</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.4.reward">200 Points + Mystery Box</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.4.expire">Sep 10, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="dota">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.5.game">Dota 2</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="DOTATREASURE26">DOTATREASURE26</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.5.reward">2 Treasures + Arcana bundle</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.5.expire">Oct 01, 2026</span></div>
+          </article>
+          <article class="code-card is-expired" data-cat="cs2">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.6.game">Counter-Strike 2</span><span class="code-card__status" data-i18n="codes.expired">Expired</span></div>
+            <div class="code-card__value" data-code="CS2SPRINGFEST">CS2SPRINGFEST</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.6.reward">Spring festival sticker set</p>
+            <div class="code-card__foot"><span data-i18n="codes.expiredOn">Expired on</span> <span data-i18n="code.6.expire">Jun 30, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="pubg">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.7.game">PUBG: BATTLEGROUNDS</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="PUBGCHUTE26">PUBGCHUTE26</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.7.reward">Exclusive parachute skin</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.7.expire">Aug 20, 2026</span></div>
+          </article>
+          <article class="code-card" data-cat="dota">
+            <div class="code-card__head"><span class="code-card__game" data-i18n="code.8.game">Dota 2</span><span class="code-card__status" data-i18n="codes.active">Active</span></div>
+            <div class="code-card__value" data-code="DOTATIREWARD">DOTATIREWARD</div>
+            <button class="code-card__copy" data-copy data-i18n="codes.copy">Copy</button>
+            <p class="code-card__reward" data-i18n="code.8.reward">TI viewer reward: loading screen</p>
+            <div class="code-card__foot"><span data-i18n="codes.expires">Expires</span> <span data-i18n="code.8.expire">Sep 05, 2026</span></div>
+          </article>
+        </div>
+      </div>
+    </section><section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="cta reveal">
+          <div>
+            <h2 data-i18n="cta.title">Get Codes in Your Inbox</h2>
+            <p data-i18n="cta.desc">Subscribe to XY Codes for fresh redeem codes and expiry alerts — never miss a drop.</p>
+          </div>
+          <form class="subscribe" onsubmit="return false;">
+            <input type="email" data-i18n-attr="placeholder:cta.email" placeholder="Enter your email" aria-label="Email address" />
+            <button class="btn btn--primary" type="submit" data-i18n="cta.subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a class="brand" href="#top">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"/><circle cx="12" cy="12" r="9"/></svg>
+            </span>
+            <span>XY<b data-i18n="nav.brandSuffix">Codes</b></span>
+          </a>
+          <p data-i18n="footer.about">Explore curated games by category and help every player find their next favorite.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.games">Games</h4>
+          <a href="index.html" data-i18n="footer.allGames">All Games</a>
+          <a href="index.html" data-i18n="footer.rpg">RPG</a>
+          <a href="index.html" data-i18n="footer.action">Action &amp; Shooter</a>
+          <a href="index.html" data-i18n="footer.casual">Casual &amp; Strategy</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.platform">Platform</h4>
+          <a href="index.html#entries" data-i18n="footer.community">Community</a>
+          <a href="index.html#entries" data-i18n="footer.live">Live</a>
+          <a href="index.html#entries" data-i18n="footer.store">Store</a>
+          <a href="index.html#entries" data-i18n="footer.esports">Esports</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.aboutH">About</h4>
+          <a href="#top" data-i18n="footer.aboutUs">About Us</a>
+          <a href="#top" data-i18n="footer.join">Join Us</a>
+          <a href="#top" data-i18n="footer.help">Help Center</a>
+          <a href="#top" data-i18n="footer.business">Business</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2026 XY Games · Crafted for players who love to play</span>
+        <span data-i18n="footer.privacy">Privacy · Terms · Cookie Settings</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===================== i18n ===================== */
+    const I18N = {
+  'nav.brandSuffix': { en: 'Codes', zh: '兑换码' },
+  'nav.home':        { en: 'XY Codes Home', zh: 'XY 兑换码 首页' },
+  'nav.games':       { en: 'Games', zh: '游戏站' },
+  'nav.news':        { en: 'News', zh: '资讯' },
+  'nav.codes':       { en: 'Codes', zh: '兑换码' },
+  'nav.tools':       { en: 'Tools', zh: '工具站' },
+  'nav.community':   { en: 'Community', zh: '社区' },
+  'nav.live':        { en: 'Live', zh: '直播' },
+  'nav.store':       { en: 'Store', zh: '商城' },
+  'nav.esports':     { en: 'Esports', zh: '赛事' },
+  'nav.search':      { en: 'Search codes…', zh: '搜索兑换码…' },
+  'nav.signin':      { en: 'Sign in', zh: '登录' },
+  'nav.menu':        { en: 'Open menu', zh: '打开菜单' },
+  'mm.head':        { en: 'Browse', zh: '浏览' },
+  'lang.btn':        { en: '中文', zh: 'EN' },
+'auth.signin':     { en: 'Sign in', zh: '登录' },
+      'auth.signup':     { en: 'Create account', zh: '注册账号' },
+      'auth.signout':    { en: 'Sign out', zh: '退出登录' },
+      'auth.myLibrary':  { en: 'My Library', zh: '我的游戏库' },
+      'auth.settings':   { en: 'Settings', zh: '设置' },
+      'auth.close':      { en: 'Close', zh: '关闭' },
+      'auth.username':   { en: 'Username', zh: '用户名' },
+      'auth.email':      { en: 'Email', zh: '邮箱' },
+      'auth.password':   { en: 'Password', zh: '密码' },
+      'auth.confirm':    { en: 'Confirm password', zh: '确认密码' },
+      'auth.submitLogin':  { en: 'Sign in', zh: '登录' },
+      'auth.submitSignup': { en: 'Create account', zh: '创建账号' },
+      'auth.hasAccount': { en: 'Already have an account? <a href="#" id="toLogin">Sign in</a>', zh: '已有账号？<a href="#" id="toLogin">登录</a>' },
+      'auth.noAccount':  { en: 'New to XY? <a href="#" id="toSignup">Create one</a>', zh: '还没有账号？<a href="#" id="toSignup">注册</a>' },
+      'auth.demoNote':   { en: 'Demo mode — accounts are saved locally in your browser.', zh: '演示模式 — 账号仅保存在你的浏览器本地。' },
+      'auth.comingSoon': { en: 'Coming soon', zh: '敬请期待' },
+      'auth.errRequired':  { en: 'Please fill in all fields.', zh: '请填写所有字段。' },
+      'auth.errUserLen':   { en: 'Username must be 3–20 letters/numbers/_', zh: '用户名需 3–20 位（字母/数字/_）。' },
+      'auth.errEmail':     { en: 'Enter a valid email address.', zh: '请输入有效的邮箱地址。' },
+      'auth.errPwLen':     { en: 'Password must be at least 6 characters.', zh: '密码至少 6 位。' },
+      'auth.errPwMatch':   { en: 'Passwords do not match.', zh: '两次输入的密码不一致。' },
+      'auth.errUserTaken': { en: 'That username is taken.', zh: '该用户名已被占用。' },
+      'auth.errEmailTaken':{ en: 'That email is already registered.', zh: '该邮箱已被注册。' },
+      'auth.errLogin':     { en: 'Incorrect username/email or password.', zh: '用户名/邮箱或密码错误。' },
+      'auth.successLogin': { en: 'Signed in successfully.', zh: '登录成功。' },
+      'auth.successSignup':{ en: 'Account created. Welcome!', zh: '账号已创建，欢迎！' },
+      'auth.signedOut':    { en: 'Signed out.', zh: '已退出登录。' },
+
+  'hero.eyebrow': { en: 'REWARDS · Free Redeem Codes', zh: '福利 · 免费兑换码' },
+  'hero.title1':  { en: 'Game', zh: '游戏' },
+  'hero.title2':  { en: 'redeem codes', zh: '兑换码' },
+  'hero.lead':    { en: 'Grab free in-game rewards — weapon skins, currency, crates and more. New codes added weekly. Copy a code and redeem it in-game before it expires.', zh: '领取免费游戏内奖励——武器皮肤、游戏货币、宝箱等。每周上新，复制兑换码并在游戏内过期前使用。' },
+  'hero.browse':  { en: 'Browse Codes', zh: '浏览兑换码' },
+  'hero.news':    { en: 'Read News', zh: '查看资讯' },
+
+  'spot.badge': { en: 'Hot', zh: '热门' },
+  'spot.tag':   { en: 'Featured Pack', zh: '推荐礼包' },
+  'spot.title': { en: 'Summer G-Coin Pack', zh: '盛夏 G币 礼包' },
+  'spot.desc':  { en: '500 G-Coin, an exclusive parachute skin and a 7-day XP boost — one code, all rewards.', zh: '500 G币、限定降落伞皮肤与 7 天经验加成，一码全收。' },
+  'spot.game':  { en: 'Game', zh: '游戏' },
+  'spot.gamev': { en: 'PUBG: BATTLEGROUNDS', zh: '绝地求生' },
+  'spot.reward':{ en: 'Reward', zh: '奖励' },
+  'spot.rewardv':{ en: 'Mega', zh: '超级' },
+
+  'codes.title':   { en: 'Redeem Codes', zh: '兑换码' },
+  'codes.sub':     { en: 'Filter by game or search a title. Copy a code and redeem it in-game for free skins, currency, crates and more.', zh: '按游戏筛选或搜索名称，复制兑换码并在游戏内兑换免费皮肤、货币、宝箱等福利。' },
+  'codes.search':  { en: 'Search game or code…', zh: '搜索游戏或兑换码…' },
+  'codes.copy':    { en: 'Copy', zh: '复制' },
+  'codes.active':  { en: 'Active', zh: '有效' },
+  'codes.expired': { en: 'Expired', zh: '已失效' },
+  'codes.expiredOn':{ en: 'Expired on', zh: '已于' },
+  'codes.expires': { en: 'Expires', zh: '有效期至' },
+
+  'howto.title': { en: 'How to Redeem', zh: '如何兑换' },
+  'howto.s1':    { en: 'Copy a code below', zh: '复制下方兑换码' },
+  'howto.s2':    { en: 'Open the game', zh: '打开对应游戏' },
+  'howto.s3':    { en: 'Find "Redeem Code" in settings', zh: '在设置中找到"兑换码"' },
+  'howto.s4':    { en: 'Paste & claim rewards', zh: '粘贴并领取奖励' },
+
+  'filter.all':   { en: 'All', zh: '全部' },
+  'ccat.cs2':    { en: 'CS2', zh: 'CS2' },
+  'ccat.pubg':   { en: 'PUBG', zh: '绝地求生' },
+  'ccat.poe':    { en: 'PoE', zh: '流放之路' },
+  'ccat.dota':   { en: 'Dota 2', zh: '刀塔 2' },
+
+  'code.1.game':   { en: 'Counter-Strike 2', zh: '反恐精英 2' },
+  'code.1.reward': { en: 'Exclusive weapon skin + 2 weapon cases', zh: '限定武器皮肤 + 2 个武器箱' },
+  'code.1.expire': { en: 'Aug 31, 2026', zh: '2026年8月31日' },
+  'code.2.game':   { en: 'Counter-Strike 2', zh: '反恐精英 2' },
+  'code.2.reward': { en: 'New-player knife + sticker capsule', zh: '新手刀具 + 贴纸胶囊' },
+  'code.2.expire': { en: 'Sep 30, 2026', zh: '2026年9月30日' },
+  'code.3.game':   { en: 'PUBG: BATTLEGROUNDS', zh: '绝地求生' },
+  'code.3.reward': { en: '500 G-Coin + Survivor Crate', zh: '500 G币 + 生存者宝箱' },
+  'code.3.expire': { en: 'Aug 15, 2026', zh: '2026年8月15日' },
+  'code.4.game':   { en: 'Path of Exile', zh: '流放之路' },
+  'code.4.reward': { en: '200 Points + Mystery Box', zh: '200 点券 + 神秘宝箱' },
+  'code.4.expire': { en: 'Sep 10, 2026', zh: '2026年9月10日' },
+  'code.5.game':   { en: 'Dota 2', zh: '刀塔 2' },
+  'code.5.reward': { en: '2 Treasures + Arcana bundle', zh: '2 个宝藏 + 至宝套装' },
+  'code.5.expire': { en: 'Oct 01, 2026', zh: '2026年10月1日' },
+  'code.6.game':   { en: 'Counter-Strike 2', zh: '反恐精英 2' },
+  'code.6.reward': { en: 'Spring festival sticker set', zh: '春节贴纸套装' },
+  'code.6.expire': { en: 'Jun 30, 2026', zh: '2026年6月30日' },
+  'code.7.game':   { en: 'PUBG: BATTLEGROUNDS', zh: '绝地求生' },
+  'code.7.reward': { en: 'Exclusive parachute skin', zh: '限定降落伞皮肤' },
+  'code.7.expire': { en: 'Aug 20, 2026', zh: '2026年8月20日' },
+  'code.8.game':   { en: 'Dota 2', zh: '刀塔 2' },
+  'code.8.reward': { en: 'TI viewer reward: loading screen', zh: 'TI 观赛奖励：载入画面' },
+  'code.8.expire': { en: 'Sep 05, 2026', zh: '2026年9月5日' },
+
+  'cta.title':   { en: 'Get Codes in Your Inbox', zh: '兑换码直达邮箱' },
+  'cta.desc':    { en: 'Subscribe to XY Codes for fresh redeem codes and expiry alerts — never miss a drop.', zh: '订阅 XY 兑换码，新码与到期提醒第一时间送达，不再错过。' },
+  'cta.email':   { en: 'Enter your email', zh: '输入你的邮箱' },
+  'cta.subscribe':{ en: 'Subscribe', zh: '订阅' },
+
+  'footer.about':   { en: 'Free, verified redeem codes for your favorite games — updated every week.', zh: '为你喜爱的游戏提供免费、已核验的兑换码，每周更新。' },
+  'footer.games':   { en: 'Games', zh: '游戏' },
+  'footer.platform':{ en: 'Platform', zh: '平台' },
+  'footer.aboutH':  { en: 'About', zh: '关于' },
+  'footer.allGames':{ en: 'All Codes', zh: '全部兑换码' },
+  'footer.rpg':     { en: 'Counter-Strike 2', zh: '反恐精英 2' },
+  'footer.action':  { en: 'PUBG', zh: '绝地求生' },
+  'footer.casual':  { en: 'Dota 2', zh: '刀塔 2' },
+  'footer.community':{ en: 'Community', zh: '玩家社区' },
+  'footer.live':    { en: 'Live', zh: '游戏直播' },
+  'footer.store':   { en: 'Store', zh: '游戏商城' },
+  'footer.esports': { en: 'Esports', zh: '电竞赛事' },
+  'footer.aboutUs': { en: 'About Us', zh: '关于我们' },
+  'footer.join':    { en: 'Join Us', zh: '加入团队' },
+  'footer.help':    { en: 'Help Center', zh: '帮助中心' },
+  'footer.business':{ en: 'Business', zh: '商务合作' },
+  'footer.copyright':{ en: '© 2026 XY Codes · Free rewards for every player', zh: '© 2026 XY 兑换码 · 给每位玩家的免费福利' },
+  'footer.privacy': { en: 'Privacy · Terms · Cookie Settings', zh: '隐私政策 · 服务条款 · Cookie 设置' },
+
+  'meta.title': { en: 'XY Codes · Free Game Redeem Codes', zh: 'XY 兑换码 · 免费游戏兑换码' },
+  'meta.desc':  { en: 'XY Codes — free in-game redeem codes for weapon skins, currency, crates and more. New codes added weekly.', zh: 'XY 兑换码 — 武器皮肤、游戏货币、宝箱等免费游戏内兑换码，每周上新。' }
+};
+
+    const t = (k, lang) => (I18N[k] && I18N[k][lang]) || k;
+
+    function applyLang(lang) {
+      document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+      document.documentElement.style.setProperty('--soon-label', lang === 'zh' ? '"待"' : '"SOON"');
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (I18N[k] && I18N[k][lang] != null) { const v = I18N[k][lang]; if (v.includes('<')) el.innerHTML = v; else el.textContent = v; }
+      });
+      document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+        el.getAttribute('data-i18n-attr').split('|').forEach(pair => {
+          const [attr, key] = pair.split(':');
+          if (I18N[key] && I18N[key][lang] != null) el.setAttribute(attr, I18N[key][lang]);
+        });
+      });
+      document.title = t('meta.title', lang);
+      const m = document.querySelector('meta[name="description"]');
+      if (m) m.setAttribute('content', t('meta.desc', lang));
+      const btn = document.querySelector('#langToggle span');
+      if (btn) btn.textContent = t('lang.btn', lang);
+      try { localStorage.setItem('xyls-lang', lang); } catch (e) {}
+    }
+
+    let current = 'en';
+    try { current = localStorage.getItem('xyls-lang') || 'en'; } catch (e) {}
+    applyLang(current);
+
+    document.querySelector('#langToggle')?.addEventListener('click', () => {
+      current = (current === 'en') ? 'zh' : 'en';
+      applyLang(current);
+    });
+
+        /* ===================== 分类筛选 / 搜索 / 复制 ===================== */
+    const cards = document.querySelectorAll('#codeGrid .code-card');
+    const chips = document.querySelectorAll('.chip');
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    function applyView() {
+      cards.forEach(g => {
+        const matchCat = (activeFilter === 'all' || g.dataset.cat === activeFilter);
+        const matchText = !searchQuery || (g.textContent || '').toLowerCase().includes(searchQuery);
+        g.style.display = (matchCat && matchText) ? '' : 'none';
+      });
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => { c.classList.remove('is-active'); c.setAttribute('aria-selected', 'false'); });
+        chip.classList.add('is-active');
+        chip.setAttribute('aria-selected', 'true');
+        activeFilter = chip.dataset.filter;
+        applyView();
+      });
+    });
+    const search = document.querySelector('#codeSearch');
+    if (search) {
+      search.addEventListener('input', () => {
+        searchQuery = search.value.trim().toLowerCase();
+        applyView();
+      });
+    }
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const val = btn.parentElement.querySelector('.code-card__value').textContent.trim();
+        try { await navigator.clipboard.writeText(val); } catch (e) {}
+        const old = btn.textContent;
+        btn.textContent = (current === 'zh') ? '已复制' : 'Copied';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = old; btn.classList.remove('copied'); }, 1400);
+      });
+    });
+/* ===================== 滚动揭示 ===================== */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 60 + 'ms';
+      io.observe(el);
+    });
+
+    /* ===================== 移动端抽屉菜单 ===================== */
+    (() => {
+      const burger = document.querySelector('.nav__burger');
+      const menu = document.getElementById('mobileMenu');
+      if (!burger || !menu) return;
+      const open = () => { menu.classList.add('is-open'); menu.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; };
+      const close = () => { menu.classList.remove('is-open'); menu.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; };
+      burger.addEventListener('click', () => { menu.classList.contains('is-open') ? close() : open(); });
+      menu.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
+      menu.querySelectorAll('.mobile-menu__link').forEach(l => l.addEventListener('click', close));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    })();
+  
+/* ===================== 玩家登录（本地演示 / Player Auth） ===================== */
+    (() => {
+      const USERS_KEY = 'xyls-users';     // registered accounts
+      const SESSION_KEY = 'xyls-user';    // current session
+      const $ = (id) => document.getElementById(id);
+
+      const modal = $('authModal');
+      const loginForm = $('loginForm');
+      const signupForm = $('signupForm');
+
+      // ---- storage helpers ----
+      const loadUsers = () => { try { return JSON.parse(localStorage.getItem(USERS_KEY)) || []; } catch (e) { return []; } };
+      const saveUsers = (u) => localStorage.setItem(USERS_KEY, JSON.stringify(u));
+      const loadSession = () => { try { return JSON.parse(localStorage.getItem(SESSION_KEY)); } catch (e) { return null; } };
+      const saveSession = (u) => localStorage.setItem(SESSION_KEY, JSON.stringify(u));
+      const clearSession = () => localStorage.removeItem(SESSION_KEY);
+
+      // light obfuscation (client-side demo only — NOT real security)
+      const hashPw = (pw) => { let h = 5381; for (let i = 0; i < pw.length; i++) h = ((h << 5) + h + pw.charCodeAt(i)) >>> 0; return 'h' + h.toString(36); };
+
+      // ---- toast ----
+      let toastTimer;
+      function toast(msg) {
+        let el = $('toast');
+        if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite'); document.body.appendChild(el); }
+        el.textContent = msg; el.classList.add('is-show');
+        clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('is-show'), 2600);
+      }
+
+      const L = (k) => (I18N[k] && I18N[k][current]) || k;
+
+      // ---- render logged-in / logged-out state ----
+      function renderAuthState() {
+        const u = loadSession();
+        if (u) {
+          const av = $('accountBtn');
+          if ($('openAuth')) $('openAuth').hidden = true;
+          if (av) { av.hidden = false; av.textContent = (u.username || '?').charAt(0).toUpperCase(); av.setAttribute('aria-label', u.username); }
+          if ($('accName')) $('accName').textContent = u.username;
+          if ($('accEmail')) $('accEmail').textContent = u.email || '';
+          if ($('mmAccountOut')) $('mmAccountOut').hidden = true;
+          if ($('mmAccountIn')) { $('mmAccountIn').hidden = false; if ($('mmName')) $('mmName').textContent = u.username; }
+        } else {
+          if ($('openAuth')) $('openAuth').hidden = false;
+          if ($('accountBtn')) $('accountBtn').hidden = true;
+          if ($('mmAccountOut')) $('mmAccountOut').hidden = false;
+          if ($('mmAccountIn')) $('mmAccountIn').hidden = true;
+        }
+      }
+
+      // ---- modal control ----
+      function setMode(mode) {
+        const isSignup = mode === 'signup';
+        $('tabLogin').classList.toggle('is-active', !isSignup);
+        $('tabSignup').classList.toggle('is-active', isSignup);
+        $('tabLogin').setAttribute('aria-selected', String(!isSignup));
+        $('tabSignup').setAttribute('aria-selected', String(isSignup));
+        loginForm.hidden = isSignup;
+        signupForm.hidden = !isSignup;
+        clearErrors();
+      }
+      function openModal(mode) {
+        setMode(mode || 'login');
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const focusId = (mode === 'signup') ? 'suUser' : 'loginId';
+        setTimeout(() => { const el = $(focusId); if (el) el.focus(); }, 60);
+      }
+      function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        clearErrors();
+      }
+
+      // ---- errors ----
+      function setError(inputId, key) {
+        const field = $(inputId).closest('.field');
+        const err = field.querySelector('.err');
+        field.classList.add('is-invalid');
+        err.textContent = L(key);
+      }
+      function clearErrors() {
+        modal.querySelectorAll('.field.is-invalid').forEach(f => { f.classList.remove('is-invalid'); const e = f.querySelector('.err'); if (e) e.textContent = ''; });
+      }
+
+      // ---- submit handlers ----
+      function handleLogin(e) {
+        e.preventDefault();
+        clearErrors();
+        const id = loginForm.identifier.value.trim();
+        const pw = loginForm.password.value;
+        if (!id || !pw) { if (!id) setError('loginId', 'auth.errRequired'); if (!pw) setError('loginPw', 'auth.errRequired'); return; }
+        const users = loadUsers();
+        const user = users.find(x => x.username.toLowerCase() === id.toLowerCase() || (x.email && x.email.toLowerCase() === id.toLowerCase()));
+        if (!user || user.pw !== hashPw(pw)) { setError('loginId', 'auth.errLogin'); setError('loginPw', 'auth.errLogin'); return; }
+        saveSession({ username: user.username, email: user.email });
+        renderAuthState(); closeModal(); loginForm.reset();
+        toast(L('auth.successLogin'));
+      }
+      function handleSignup(e) {
+        e.preventDefault();
+        clearErrors();
+        const username = signupForm.username.value.trim();
+        const email = signupForm.email.value.trim();
+        const pw = signupForm.password.value;
+        const pw2 = signupForm.confirm.value;
+        let ok = true;
+        if (!/^[a-zA-Z0-9_]{3,20}$/.test(username)) { setError('suUser', 'auth.errUserLen'); ok = false; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('suEmail', 'auth.errEmail'); ok = false; }
+        if (pw.length < 6) { setError('suPw', 'auth.errPwLen'); ok = false; }
+        if (pw !== pw2) { setError('suPw2', 'auth.errPwMatch'); ok = false; }
+        if (!ok) return;
+        const users = loadUsers();
+        if (users.some(x => x.username.toLowerCase() === username.toLowerCase())) { setError('suUser', 'auth.errUserTaken'); return; }
+        if (users.some(x => x.email.toLowerCase() === email.toLowerCase())) { setError('suEmail', 'auth.errEmailTaken'); return; }
+        users.push({ username, email, pw: hashPw(pw) });
+        saveUsers(users);
+        saveSession({ username, email });
+        renderAuthState(); closeModal(); signupForm.reset();
+        toast(L('auth.successSignup'));
+      }
+
+      // ---- open / close wiring ----
+      $('openAuth').addEventListener('click', () => openModal('login'));
+      const openMobile = $('openAuthMobile');
+      if (openMobile) openMobile.addEventListener('click', () => { closeMobileMenu(); openModal('login'); });
+      $('authClose').addEventListener('click', closeModal);
+      modal.querySelector('[data-close-auth]').addEventListener('click', closeModal);
+      $('tabLogin').addEventListener('click', () => setMode('login'));
+      $('tabSignup').addEventListener('click', () => setMode('signup'));
+      modal.addEventListener('click', (e) => {
+        if (e.target.id === 'toLogin') { e.preventDefault(); setMode('login'); }
+        else if (e.target.id === 'toSignup') { e.preventDefault(); setMode('signup'); }
+      });
+      loginForm.addEventListener('submit', handleLogin);
+      signupForm.addEventListener('submit', handleSignup);
+
+      function closeMobileMenu() { const mm = $('mobileMenu'); if (mm) { mm.classList.remove('is-open'); mm.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; } }
+
+      // ---- account dropdown ----
+      const accountBtn = $('accountBtn');
+      const accountMenu = $('accountMenu');
+      if (accountBtn) accountBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = accountMenu.classList.toggle('is-open');
+        accountBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', (e) => {
+        if (accountMenu && !accountMenu.contains(e.target) && e.target !== accountBtn) {
+          accountMenu.classList.remove('is-open'); accountBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      const logoutBtn = $('logoutBtn');
+      if (logoutBtn) logoutBtn.addEventListener('click', () => { clearSession(); renderAuthState(); if (accountMenu) accountMenu.classList.remove('is-open'); toast(L('auth.signedOut')); });
+      const logoutMobile = $('logoutBtnMobile');
+      if (logoutMobile) logoutMobile.addEventListener('click', () => { clearSession(); renderAuthState(); closeMobileMenu(); toast(L('auth.signedOut')); });
+
+      // placeholder menu items (My Library / Settings)
+      document.querySelectorAll('[data-soon]').forEach(b => b.addEventListener('click', () => toast(L('auth.comingSoon'))));
+
+      // ---- ESC + focus trap ----
+      document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+        if (modal.classList.contains('is-open')) closeModal();
+        if (accountMenu && accountMenu.classList.contains('is-open')) { accountMenu.classList.remove('is-open'); accountBtn.setAttribute('aria-expanded', 'false'); }
+      });
+      modal.addEventListener('keydown', (e) => {
+        if (e.key !== 'Tab') return;
+        const all = modal.querySelectorAll('button, input, a[href], [tabindex]:not([tabindex="-1"])');
+        const list = Array.from(all).filter(el => !el.hidden && el.offsetParent !== null);
+        if (!list.length) return;
+        const first = list[0], last = list[list.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      });
+
+      // ---- init ----
+      renderAuthState();
+    })();
+  </script>
+</body>
+</html>
